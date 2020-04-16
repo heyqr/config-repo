@@ -1,0 +1,12 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+spring:
+    application:
+        name: order
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: springstudent
+        password: springstudent
+        url: jdbc:mysql://${BIND_ADDRESS:localhost}:3306/web_order?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC

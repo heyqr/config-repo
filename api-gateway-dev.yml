@@ -1,0 +1,17 @@
+zuul:
+  sensitive-headers:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+  # product: /myProduct/**
+  # exclude certain routes
+  ignored-patterns:
+    - /**/product/listForOrder
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+env:
+    dev-remote  
