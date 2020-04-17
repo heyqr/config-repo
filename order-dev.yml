@@ -11,12 +11,12 @@ spring:
         password: springstudent
         url: jdbc:mysql://${BIND_ADDRESS:localhost}:3306/web_order?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     rabbitmq:
-        host: rabbitmq
+        host: ${BIND_ADDRESS:localhost}
         port: 5672
         username: guest
         password: guest
     redis:
-        host: redis
+        host: ${BIND_ADDRESS:localhost}
         port: 6379
 hystrix:
     command:
