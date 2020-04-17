@@ -9,7 +9,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         username: springstudent
         password: springstudent
-        url: jdbc:mysql://{BIND_ADDRESS:localhost}:3306/web_order?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+        url: jdbc:mysql://${BIND_ADDRESS:localhost}:3306/web_order?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     rabbitmq:
         host: rabbitmq
         port: 5672
